@@ -24,22 +24,6 @@ import Layout from '../layouts/Layout.astro';
 </Layout>
 
 <style>
-    @import url('https://rsms.me/inter/inter.css');
-
-    html {
-        font-family: 'Inter', sans-serif;
-    }
-
-    @supports (font-variation-settings: normal) {
-        html {
-            font-family: 'Inter var', sans-serif;
-        }
-    }
-
-    :root {
-        --gradient: linear-gradient(to right, hsl(340, 100%, 50%) 0%, var(--color-theme) 50%, var(--color-theme-2) 100%);
-    }
-
     main {
         display: flex;
         flex-direction: column;
@@ -95,13 +79,6 @@ import Layout from '../layouts/Layout.astro';
         }
     }
 
-    .style-montserrat {
-        font-family: 'Montserrat', sans-serif;
-        text-transform: uppercase;
-        letter-spacing: 0.25rem;
-        font-weight: 500;
-    }
-
     .nav {
         list-style: none;
         margin: 0;
@@ -119,10 +96,12 @@ import Layout from '../layouts/Layout.astro';
         text-decoration: inherit;
         color: inherit;
     }
+
     .nav a:hover {
         text-decoration: underline dotted;
         text-underline-offset: 0.5rem;
     }
+
     .nav a:visited {
         color: var(--color-theme)
     }

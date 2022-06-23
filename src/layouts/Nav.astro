@@ -1,0 +1,55 @@
+---
+
+---
+
+<nav>
+    <ul class="unstyled-list">
+        <li><a href="/">Home</a></li>
+        <li><a href="/projects">Projects</a></li>
+        <li><a href="/writing">Writing</a></li>
+        <li><a href="/about">About</a></li>
+    </ul>
+</nav>
+<main>
+    <slot />
+</main>
+
+<style>
+    main {
+        margin: 0 1rem;
+    }
+
+    @media (min-width: 768px) {
+        main {
+            margin: 0 4rem;
+        }
+    }
+
+    nav {
+        padding: 1rem 0;
+        font-weight: 500;
+    }
+
+    .unstyled-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    @media (min-width: 768px) {
+        ul {
+            
+        }
+    }
+
+    a {
+        padding: 1rem;
+        /* width: 100%; */
+    }
+</style>
