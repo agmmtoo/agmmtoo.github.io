@@ -19,13 +19,13 @@ import projects from './projects.json';
         <header>
             <h1 class="style-montserrat">Projects</h1>
             <p>Stuffs I've worked on, upon learning certain things.</p>
-        </div>
+        </header>
         <div class="wrapper">
             {projects.map(project => (
             <ProjectCard name={project.name} description={project.description} slug={project.slug} url={project.url}
                 repo={project.repo} />
             ))}
-        </header>
+        </div>
     </main>
 </Layout>
 
@@ -33,6 +33,7 @@ import projects from './projects.json';
     header {
         margin: 4rem 0;
     }
+     
 
     h1 {
         font-weight: 600;
