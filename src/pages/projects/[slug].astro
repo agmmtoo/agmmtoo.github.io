@@ -1,0 +1,83 @@
+---
+import Nav from '../../layouts/Nav.astro';
+import Layout from '../../layouts/Layout.astro';
+
+// style
+import '../../styles/global.css';
+
+// projects json
+import projects from './projects.json';
+
+// get static paths from projects.json
+export function getStaticPaths() {
+    return projects.map(project => ({
+        params: {
+            slug: project.slug
+        }
+    }));
+}
+
+// get slug from Astroo params object
+const { slug } = Astro.params;
+// select project from projects.json by slug
+const project = projects.find(project => project.slug === slug);
+---
+
+<Layout title={project.name}>
+    <Nav />
+    <main>
+        <header>
+            <h1 class="style-montserrat">{project.name}</h1>
+            <p>{project.description}</p>
+            <div class="tags">
+                {project.tags.map(tag => (
+                <span class={`${tag}`}>{tag}</span>
+                ))}
+            </div>
+        </header>
+    </main>
+</Layout>
+
+<style>
+    :root {
+        --color-react: cyan;
+        --color-javascript: yellow;
+    }
+
+    header {
+        margin: 4rem 0;
+    }
+
+    header>h1 {
+        font-weight: 600;
+        font-size: var(--font-size-xl);
+        letter-spacing: 0.8rem;
+    }
+    header>p {
+        font-weight: 500;
+    }
+
+    .tags {
+        margin: 1rem 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .tags>span {
+        border-radius: 1rem;
+        padding: 0.25rem 1rem;
+        color: var(--color-text);
+        text-transform: capitalize;
+    }
+
+    .react {
+        background-color: var(--color-react);
+    }
+
+    .javascript {
+        background-color: var(--color-javascript);
+    }
+</style>

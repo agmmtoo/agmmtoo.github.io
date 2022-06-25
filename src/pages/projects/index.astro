@@ -1,0 +1,54 @@
+---
+// projects index page
+
+import Layout from '../../layouts/Layout.astro';
+import Nav from '../../layouts/Nav.astro';
+import ProjectCard from '../../components/ProjectCard.astro';
+
+// projects json
+import projects from './projects.json';
+---
+
+<head>
+    <meta name="description" content="Some projects I've done." />
+</head>
+
+<Layout title="Projects">
+    <Nav />
+    <main>
+        <header>
+            <h1 class="style-montserrat">Projects</h1>
+            <p>Stuffs I've worked on, upon learning certain things.</p>
+        </div>
+        <div class="wrapper">
+            {projects.map(project => (
+            <ProjectCard name={project.name} description={project.description} slug={project.slug} url={project.url}
+                repo={project.repo} />
+            ))}
+        </header>
+    </main>
+</Layout>
+
+<style>
+    header {
+        margin: 4rem 0;
+    }
+
+    h1 {
+        font-weight: 600;
+        font-size: var(--font-size-xl);
+        letter-spacing: 0.8rem;
+    }
+
+    p {
+        font-weight: 500;
+    }
+
+    div.wrapper {
+        margin: 2rem 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10%;
+
+    }
+</style>
