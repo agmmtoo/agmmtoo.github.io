@@ -1,12 +1,11 @@
 ---
-import Nav from '../../layouts/Nav.astro';
-import Layout from '../../layouts/Layout.astro';
-
 // styles
 // base style
 import '../../styles/global.css';
 // style for README.md
 import '../../styles/readme.css';
+import Nav from '../../layouts/Nav.astro';
+import Layout from '../../layouts/Layout.astro';
 
 // projects json
 import projects from './projects.json';
@@ -33,10 +32,6 @@ const res = await fetch(`https://api.github.com/repos/agmyintmyatoo/${project.re
 });
 const readme = await res.text();
 ---
-
-<head>
-    <meta name="description" content={project.description} />
-</head>
 
 <Layout title={project.name}>
     <Nav />
