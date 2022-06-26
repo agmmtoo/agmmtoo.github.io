@@ -1,0 +1,44 @@
+:root {
+    --readme-font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+    --readme-font-size-md: clamp(1.2rem, 0.4vw + 1rem, 1.5rem);
+    --readme-font-size-lg: clamp(1.5rem, 0.7vw + 1.2rem, 1.7rem);
+    --readme-font-size-xl: clamp(2rem, 2vw + 1rem, 3rem);
+}
+
+article {
+    padding: 1rem 0;
+    line-height: 1.5rem;
+}
+
+article * {
+    margin: 1.2rem 0;
+}
+
+code {
+    letter-spacing: 0.2rem;
+    background-color: #eee;
+}
+
+a {
+    color: var(--color-theme);
+}
+
+svg {
+    display: inline-block;
+    margin-right: 0.25rem;
+}
+
+h1 {
+    font-size: var(--readme-font-size-xl);
+    margin: 1.5rem 0;
+}
+
+h2 {
+    font-size: var(--readme-font-size-lg);
+    margin: 1rem 0;
+}
+
+h3,h4,h5,h6 {
+    font-size: var(--readme-font-size-md);
+    margin: 1.2rem 0;
+}
