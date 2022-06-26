@@ -34,6 +34,10 @@ const res = await fetch(`https://api.github.com/repos/agmyintmyatoo/${project.re
 const readme = await res.text();
 ---
 
+<head>
+    <meta name="description" content={project.description} />
+</head>
+
 <Layout title={project.name}>
     <Nav />
     <main>

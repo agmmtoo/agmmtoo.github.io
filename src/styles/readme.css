@@ -19,7 +19,7 @@ code {
     background-color: #eee;
 }
 
-a {
+.readme a {
     color: var(--color-theme);
 }
 
