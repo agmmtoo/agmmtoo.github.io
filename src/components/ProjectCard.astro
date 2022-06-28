@@ -3,7 +3,7 @@ const { name, description, slug, url, repo } = Astro.props;
 ---
 
 <section>
-    <a href={`/${slug}`}>
+    <a href={`${slug}`}>
         <h3>{name}</h3>
         <p>{description}</p>
     </a>
