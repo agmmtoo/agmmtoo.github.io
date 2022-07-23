@@ -8,12 +8,14 @@ const { name, description, slug, url, repo } = Astro.props;
         <p>{description}</p>
     </a>
     <div class="actions">
-        {url && (<a href={url}>
+        {url && (
+        <a href={url}>
             <svg fill="inherit" xmlns="http://www.w3.org/2000/svg" height="40" width="40">
                 <path
                     d="M18.625 28.333h-6.958q-3.5 0-5.917-2.416Q3.333 23.5 3.333 20t2.417-5.917q2.417-2.416 5.917-2.416h6.958v2.791h-6.958q-2.375 0-3.959 1.584Q6.125 17.625 6.125 20t1.583 3.958q1.584 1.584 3.959 1.584h6.958Zm-5.167-6.958v-2.75h13.084v2.75Zm7.917 6.958v-2.791h6.958q2.375 0 3.959-1.584 1.583-1.583 1.583-3.958t-1.583-3.958q-1.584-1.584-3.959-1.584h-6.958v-2.791h6.958q3.5 0 5.917 2.416Q36.667 16.5 36.667 20t-2.417 5.917q-2.417 2.416-5.917 2.416Z" />
             </svg>
-        </a>)}
+        </a>
+        )}
         <a href={`https://github.com/agmyintmyatoo/${repo}`}>
             <svg fill="inherit" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="40px" height="40px">
                 <path
@@ -36,23 +38,18 @@ const { name, description, slug, url, repo } = Astro.props;
         --shadow-2: var(--shadow-color-3) 0px 1px 2px 0px, var(--shadow-color-4) 0px 2px 6px 2px;
     }
 
+    /* h3, p {
+        background-color: rgba(255, 255, 255, 0.425);
+    } */
+
     section {
         margin: 3rem 0;
         padding: 2rem;
         max-width: 20rem;
-        border-radius: 1rem;
+        border-radius: 0.5rem;
         box-shadow: var(--shadow-1);
 
         transition: all 300ms ease;
-        /* background-image: url('../assets/tailwindbg.avif'); */
-        background-image: url('../assets/project-bg.svg');
-        background-repeat: no-repeat;
-        background-size: 0%;
-        background-position: top left;
-    }
-
-    section:hover {
-        background-size: 300%;
     }
 
     section>a {
@@ -62,7 +59,7 @@ const { name, description, slug, url, repo } = Astro.props;
 
     section:hover {
         box-shadow: var(--shadow-2);
-        
+
     }
 
     @media (min-width: 768px) {

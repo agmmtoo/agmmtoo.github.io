@@ -26,6 +26,32 @@ import Layout from '../layouts/Layout.astro';
 </Layout>
 
 <style>
+    body {
+        background-image: url('../assets/bg.avif');
+        background-repeat: no-repeat;
+        background-size: 120vh;
+        background-position: top center;
+        animation: enlarge 30s ease-in-out infinite;
+    }
+
+    @keyframes enlarge {
+
+        0%,
+        100% {
+            background-size: 150vh;
+        }
+
+        50% {
+            background-size: 100vh;
+        }
+    }
+
+    @media (prefers-reduced-motion) {
+        body {
+            animation: none;
+        }
+    }
+
     main {
         margin: 0;
         display: flex;
