@@ -95,6 +95,7 @@ html {
 main {
     margin: 0 var(--margin-main);
 }
+
 a {
     color: inherit;
     text-decoration: inherit;
@@ -108,7 +109,7 @@ a:active {
 a:hover {
     color: var(--color-theme);
     text-decoration: underline;
-    text-decoration-style: wavy;
+    text-decoration-style: dotted;
     text-underline-offset: 0.25rem;
 }
 

@@ -2,7 +2,7 @@
     {
         "name": "Hacker News Reader",
         "description": "HN reader app using public API.",
-        "url": "https://ammo-hn.surge.sh",
+        "url": "https://ammohn.pages.dev",
         "repo": "hn",
         "slug": "hacker-news",
         "tags": ["react", "javascript"]
@@ -10,7 +10,7 @@
     {
         "name": "Manga Turn Web",
         "description": "Manga reader app from Manga Turn.",
-        "url": "https://mangaturn.codetotalk.com",
+        "url": "http://mangaturn.codetotalk.com",
         "repo": "manga-turn",
         "slug": "manga-turn",
         "tags": ["react", "javascript"]
