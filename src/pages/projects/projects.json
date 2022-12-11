@@ -8,8 +8,16 @@
         "tags": ["react", "javascript"]
     },
     {
+        "name": "Personal Site",
+        "description": "Personal site, as a side project to learn Astro.",
+        "url": "/",
+        "repo": "agmyintmyatoo.github.io",
+        "slug": "personal-site",
+        "tags": ["astro", "react", "javascript"]
+    },
+    {
         "name": "Manga Turn Web",
-        "description": "Manga reader app from Manga Turn.",
+        "description": "Manga reader app from Manga Turn. (Server under maintenance)",
         "url": "http://mangaturn.codetotalk.com",
         "repo": "manga-turn",
         "slug": "manga-turn",
