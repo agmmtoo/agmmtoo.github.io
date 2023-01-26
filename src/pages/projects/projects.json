@@ -1,11 +1,26 @@
 [
     {
+        "name": "Web Cite",
+        "description": "Note app for citing from web pages.",
+        "url": "https://web-cite.pages.dev",
+        "repo": "web-cite",
+        "slug": "web-cite",
+        "tags": [
+            "react",
+            "supabase",
+            "typescript"
+        ]
+    },
+    {
         "name": "Hacker News Reader",
         "description": "HN reader app using public API.",
         "url": "https://ammohn.pages.dev",
         "repo": "hn",
         "slug": "hacker-news",
-        "tags": ["react", "javascript"]
+        "tags": [
+            "react",
+            "javascript"
+        ]
     },
     {
         "name": "Personal Site",
@@ -13,7 +28,11 @@
         "url": "/",
         "repo": "agmyintmyatoo.github.io",
         "slug": "personal-site",
-        "tags": ["astro", "react", "javascript"]
+        "tags": [
+            "astro",
+            "react",
+            "javascript"
+        ]
     },
     {
         "name": "Manga Turn Web",
@@ -21,6 +40,9 @@
         "url": "http://mangaturn.codetotalk.com",
         "repo": "manga-turn",
         "slug": "manga-turn",
-        "tags": ["react", "javascript"]
+        "tags": [
+            "react",
+            "javascript"
+        ]
     }
 ]
