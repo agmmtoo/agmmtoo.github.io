@@ -35,6 +35,19 @@
         ]
     },
     {
+        "name": "Mews",
+        "description": "MERN stack with basic CRUD and point ranking system.",
+        "url": "128.199.118.1:8080/",
+        "repo": "mews",
+        "slug": "mews",
+        "tags": [
+            "express",
+            "react",
+            "javascript",
+            "mongo"
+        ]
+    },
+    {
         "name": "Manga Turn Web",
         "description": "Manga reader app from Manga Turn. (Server under maintenance)",
         "url": "http://mangaturn.codetotalk.com",
